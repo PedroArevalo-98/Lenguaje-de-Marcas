@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario CV</title>
+</head>
+<body>
+<h1>Rellena tu CV</h1>
+
+</body>
+
+<form action="destino" method= "get"> 
+<!--
+Form te sirve para crear un formulario
+action sirve para especificar donde mandar los datos del formulario.
+method te sirve para especificar como mandar los datos del formulario, los datos del formulario pueden ser mandado como un URL con "get" o como un http con "post"
+-->
+<p>
+ <label for="Nombre">Nombre</label>
+    <!--
+label representa una etiqueta para un elemento en una interfaz de usuario. No hace nada en especial al usuario, pero sirve para facilitar la vida a los usuarios de ratón porque si clikeas en el texto dentro del <label> te lleva al cuadro donde se rellena el texto.
+for : Especifica a qué elemento de formulario está vinculada una etiqueta.
+
+
+-->
+<br>
+<input type="text" size="20" maxlength="30">  
+    <!--
+ <input> especifica un campo de entrada donde el usuario puede ingresar datos.
+
+Los elementos <input> se usan dentro de un elemento <form>(formulario) para declarar controles de entrada que permiten a los usuarios ingresar datos.
+
+Un campo de entrada puede variar de muchas maneras, dependiendo del atributo de tipo.
+-->
+    </p>
+    
+
+
+
+<p>
+    <label for="Apellidos">Apellidos</label>
+    <br/>
+    <input type="text" size="50" maxlength="80"> 
+</p>
+    
+<p>
+    
+    <label for="Contraseña">Contraseña </label>
+    <br>
+    <input type="password" maxlength="10" size="10" />
+    
+</p>
+    
+<p>
+    <label for="DNI">DNI</label>
+    <br>
+    <input type="text" size="10" maxlength="9" />
+           
+</p>
+<p>
+    Sexo <br>
+   <input type="radio" name="sexo" value="hombre" checked= "checked"/>Hombre <br>
+    <input type="radio" name="sexo" value="mujer"/> mujer <br>
+</p>
+<p>
+Incluir mi foto <input type="file" name="foto"/>
+    
+</p>
+<input name="suscribir" type="checkbox" value="suscribir" cheked="checked"/> Suscribirme al boletín de novedades
+
+<br>
+<input type="submit" name="enviar" value="Guardar cambios" />
+<input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+    
+    
+    </form>
