@@ -17,6 +17,8 @@
 Form te sirve para crear un formulario
 action sirve para especificar donde mandar los datos del formulario.
 method te sirve para especificar como mandar los datos del formulario, los datos del formulario pueden ser mandado como un URL con "get" o como un http con "post"
+
+action te sirve para decir al programa donde enviar la informacion que ha recogido en el formulario" <form action=”dirección completa del archivo que la gestionará” …>
 -->
 <p>
  <label for="Nombre">Nombre</label>
@@ -27,13 +29,13 @@ for : Especifica a qué elemento de formulario está vinculada una etiqueta.
 
 -->
 <br>
-<input type="text" size="20" maxlength="30">  
+<input type="text" size="20" maxlength="30">  >
     <!--
  <input> especifica un campo de entrada donde el usuario puede ingresar datos.
-
 Los elementos <input> se usan dentro de un elemento <form>(formulario) para declarar controles de entrada que permiten a los usuarios ingresar datos.
-
 Un campo de entrada puede variar de muchas maneras, dependiendo del atributo de tipo.
+
+type define el tipo de información que va a entrar en el input puede ser varios tipos como text (texto) password (contraseña, por lo que no salen los caracteres escritos) radio (salen botones y tienen que elegir 1 de varias opciones) submit (sale un botón que sirve para enviar el formulario)
 -->
     </p>
     
@@ -42,8 +44,9 @@ Un campo de entrada puede variar de muchas maneras, dependiendo del atributo de 
 
 <p>
     <label for="Apellidos">Apellidos</label>
-    <br/>
-    <input type="text" size="50" maxlength="80"> 
+    <br>
+    <input type="text" size="50" maxlength="80"> >
+     
 </p>
     
 <p>
@@ -57,16 +60,21 @@ Un campo de entrada puede variar de muchas maneras, dependiendo del atributo de 
 <p>
     <label for="DNI">DNI</label>
     <br>
-    <input type="text" size="10" maxlength="9" />
+    <input type="text" name="DNI" size="10" maxlength="9" />
            
 </p>
 <p>
     Sexo <br>
    <input type="radio" name="sexo" value="hombre" checked= "checked"/>Hombre <br>
     <input type="radio" name="sexo" value="mujer"/> mujer <br>
+    <!--El atributo name identifica al control. Todos los controles de un formulario deben tener el atributo name porque, en general, sólo se envían los controles que lo tienen (aunque hay excepciones, como los controles de tipo imagen o los botones, que no los necesitan).
+
+En general, los atributos name no se deben repetir, porque no se recibiría toda la información al enviarla. La única excepción es el botón radio, como se explica en el apartado correspondiente.
+value establece un valor inicial consiguiendo que la reinicializacion sobre el formulario no sea infinita
+-->
 </p>
 <p>
-Incluir mi foto <input type="file" name="foto"/>
+Incluir mi foto <input type="file" name="foto" value="Elegir"/>
     
 </p>
 <input name="suscribir" type="checkbox" value="suscribir" cheked="checked"/> Suscribirme al boletín de novedades
