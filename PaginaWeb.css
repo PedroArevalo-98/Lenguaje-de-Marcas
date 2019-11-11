@@ -1,0 +1,25 @@
+#navbar  {
+    background: url(https://static.bandainamcoent.eu/high/dark-souls/dark-souls-trilogy/03-news/dst_announcement2.jpg);
+    height:70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navampliado {
+    background: url(https://static.bandainamcoent.eu/high/dark-souls/dark-souls-trilogy/03-news/dst_announcement2.jpg);
+    height:300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.tablacont {
+    width: 80%;
+    height: 80%;
+    background-color: black;
+}
+#divfooter{
+    background-color: black;
+}
+#cuerpo{
+    color: blanchedalmond;
+}
