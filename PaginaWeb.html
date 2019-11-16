@@ -2,45 +2,69 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+      
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-    @import'PaginaWeb.css';
+    <!-- Mi propia página de estilos -->
+      <style>  
+    @import'PaginaWeb.css'; 
     </style>
     <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun scale=1.0">
+    <!--la etiqueta nos sirve para que el usuario no pueda hacer zoom en un dispositivo movil-->
   </head>
-  <body background="https://areajugones.sport.es/wp-content/uploads/2018/10/Darksouls-switch-an%C3%A1lisis.jpg" media=
-        >
-      <nav class="navbar navbar-dark bg-dark" >
-          <a class="navbar-brand" href="#">Navbar</a>
+  <body background="https://areajugones.sport.es/wp-content/uploads/2018/10/Darksouls-switch-an%C3%A1lisis.jpg" >
+   <!-- imagen de fondo -->
+<!--<header>
+   <div>
+        <img src="https://i.pinimg.com/originals/b9/c5/02/b9c502a3b8c62aadf59dd127c4d67bdd.gif" height="150px">
+    </div> 
+      
+</header>-->
+<div id="menuNav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
+       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Información Juegos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Demons Souls </a>
+          <a class="dropdown-item" href="#">Dark Souls</a>
+            <a class="dropdown-item" href="#">Dark Souls 2</a>
+            <a class="dropdown-item" href="#">Dark Souls 3</a>
+            <a class="dropdown-item" href="#">Bloodborne</a>
+            <a class="dropdown-item" href="#">Sekiro</a>
+        
         </div>
       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tienda
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Merchandising</a>
+          <a class="dropdown-item" href="#">DLCs</a>
+          <a class="dropdown-item" href="#">Compra los juegos</a>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Foros</a>
+      </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="#">Soporte Técnico</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="#">Noticias</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -48,13 +72,61 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
-  <!-- Navbar content -->
-</nav> 
-   
-    <h1>Hello, world!</h1>
-    <div class="container" id="tablacont">
+</nav>
+</div>
+<div id="caja">  
+    
+<section id="contenido">
+    <article>
+        
+        <div id="contenedor_principal">
+<!--Primera Imagen-->
+<div class="contenedor_imagen_texto">
+<div class="imagen"><img src="https://cdns.kinguin.net/media/catalog/category/cache/1/image/759x286/17f82f742ffe127f42dca9de82fb58b1/i-dark-souls-prepare-to-die-edition173.jpg"></div>
+<div class="texto">Dark Souls 1</div>
+</div>
 
-    </div>
+<!--Segunda Imagen-->
+<div class="contenedor_imagen_texto">
+<div class="imagen"><img src="https://steamcdn-a.akamaihd.net/steam/apps/236430/header.jpg?t=1553251192"></div>
+<div class="texto">Dark Souls 2</div>
+</div>
+
+<!--tercera Imagen-->
+<div class="contenedor_imagen_texto">
+<div class="imagen"><img src="https://i.blogs.es/984dc1/cc76dfed12ccb88d8abcc327922f3c15/450_1000.png"></div>
+<div class="texto">Dark Souls 3</div>
+</div>
+</div>
+        
+       <p id="letra"> ContenidoLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+    </article>
+</section>
+<aside id="aside">
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+
+</aside>
+    <div class="social"> <!--barra social-->
+		<ul>
+			<li><a href="http://www.facebook.com/falconmasters" target="_blank" class="icon-facebook"></a></li>
+			<li><a href="http://www.twitter.com/falconmasters" target="_blank" class="icon-twitter"></a></li>
+			<li><a href="http://www.googleplus.com/falconmasters" target="_blank" class="icon-googleplus"></a></li>
+			<li><a href="http://www.pinterest.com/falconmasters" target="_blank" class="icon-pinterest"></a></li>
+			<li><a href="mailto:contacto@falconmasters.com" class="icon-mail"></a></li>
+		</ul>
+	</div>
+<footer>
+      
+</footer>
+</div> 
+
+      
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

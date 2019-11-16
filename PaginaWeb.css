@@ -23,3 +23,120 @@
 #cuerpo{
     color: blanchedalmond;
 }
+#imagenNavbar{
+    width:200px;
+    height:50px;
+    
+}
+header {
+    height: 150px
+}
+#contenido{
+    width:73% ;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+     background-color: rgba(0, 0, 0, 0.5);
+    padding:20px;
+    border-bottom: darkgoldenrod 5px solid;
+    border-top: darkgoldenrod 5px solid;
+    border-radius: 40px;
+    text-align: center;
+    font-style: italic;
+    float: right;
+    
+}
+#aside {
+width: 25%;
+   background-color: black;
+    opacity: 0.6;
+    float: left;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+     border-bottom: darkgoldenrod 5px solid;
+    border-top: darkgoldenrod 5px solid;
+}
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 400px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	
+.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-googleplus {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+ 
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+#caja {
+    width: 80%;
+    margin: 0 auto; 
+    max-width: 10000px;
+    
+    
+    
+}
+@media screen and (max-width:1000px){
+    
+    #contenido {
+        width: 100%;
+    }
+    #aside {
+        width: 100%;
+    }
+}
+
+#contenedor_principal{
+width:100%;
+height:auto;
+position:relative;
+margin:auto;
+}
+.contenedor_imagen_texto{
+width:335px;
+height:auto;
+position:relative;
+display:inline-block;
+vertical-align:top;
+overflow:hidden;
+opacity: 100% !important;
+}
+.imagen, .texto{
+width:100%;
+max-width: 4px;
+max-height: 2px;
+height:auto;
+position:relative;
+display:inline;
+}
+.texto{
+height:auto;
+text-align:center
+}
+#letra {
+color: white;
+opacity: 1.0;
+}
